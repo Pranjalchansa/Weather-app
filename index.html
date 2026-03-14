@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ultimate Weather App</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="weather-bg" id="weatherBg"></div>
+
+    <div class="weather-card">
+      <div class="search-box">
+        <input type="text" id="cityInput" placeholder="Enter city" />
+        <button onclick="getWeather()">🔍</button>
+      </div>
+
+      <button onclick="getLocationWeather()" class="location-btn">
+        📍 Use My Location
+      </button>
+
+      <div class="city" id="cityName">Search City</div>
+
+      <div class="temperature" id="temperature">--°C</div>
+
+      <div class="description" id="description">Weather Condition</div>
+
+      <div class="details">
+        <div>
+          <strong id="wind">-- km/h</strong>
+          <div>🌬 Wind</div>
+        </div>
+
+        <div>
+          <strong id="humidity">--%</strong>
+          <div>💧 Humidity</div>
+        </div>
+
+        <div>
+          <strong id="uv">--</strong>
+          <div>☀ UV Index</div>
+        </div>
+
+        <div>
+          <strong id="pressure">-- hPa</strong>
+          <div>🧭 Pressure</div>
+        </div>
+      </div>
+
+      <div class="loading" id="loading">Fetching weather...</div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
