@@ -69,6 +69,7 @@ weather-app
 ├── index.html
 ├── style.css
 └── script.js
+
 ▶️ How to Run the Project
 
 Clone the repository
